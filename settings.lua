@@ -16,7 +16,7 @@ data:extend(
             minimum_value = 1,
             maximum_value = 2000,
             setting_type = "startup",
-            order = "1001"
+            order = "1002"
         }
     }
 )
