@@ -17,6 +17,13 @@ data:extend(
             maximum_value = 2000,
             setting_type = "startup",
             order = "1002"
+        },
+        {
+            name = "biter_extermination-disable_pollution",
+            type = "bool-setting",
+            default_value = true,
+            setting_type = "runtime-global",
+            order = "1003"
         }
     }
 )

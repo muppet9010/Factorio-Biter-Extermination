@@ -9,4 +9,5 @@ Configurable cost of technology and recipe by setting how many units each requir
 - Each technology unit is: 4 military, 2 space and chemical, 1 of each other science pack.
 - Each recipe unit is: 1 atomic bomb, 25 poison capsules, 10 steel.
 
-Only supports/uses base game technologies and items at present.
+On launch the weapon will kill everything on the "enemy" team on the planet that the weapon is launched from. Option to have pollution disabled and removed from the entire game upon weapon deployment to save UPS.
+Only supports/uses base game technologies and items.
