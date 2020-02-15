@@ -4,6 +4,7 @@ Research and launch a biter killing weapon to cleanse the planet
 
 Designed for players who enjoy the biters for the early game stages, but later on they find them an annoyance. This mod adds a natural ingame way to simplify your life. Research the weapon, produce 1 and launch it in to space, job done.
 
+
 Details
 ------------
 

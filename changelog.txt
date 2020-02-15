@@ -1,6 +1,6 @@
 ---------------------------------------------------------------------------------------------------
 Version: 18.0.1
-Date: 2020-02-14
+Date: 2020-02-15
   Features:
     - Updated to Factorio 0.18
     - Option to disable the technology by setting its cost to 0.
