@@ -4,7 +4,7 @@ data:extend(
             name = "biter_extermination-tech_cost_multiplyer",
             type = "int-setting",
             default_value = 10000,
-            minimum_value = 1,
+            minimum_value = 0,
             maximum_value = 50000,
             setting_type = "startup",
             order = "1001"

@@ -1,13 +1,13 @@
 {
     "name": "biter_extermination",
-    "version": "17.0.0",
+    "version": "18.0.1",
     "title": "Biter Extermination",
     "author": "Muppet9010",
     "contact": "",
     "homepage": "https://mods.factorio.com/mod/biter_extermination",
-    "factorio_version": "0.17",
+    "factorio_version": "0.18",
     "dependencies": [
-        "base >= 0.17.50"
+        "base >= 0.18"
     ],
     "description": "Research and launch a biter killing weapon to cleanse the planet"
 }
