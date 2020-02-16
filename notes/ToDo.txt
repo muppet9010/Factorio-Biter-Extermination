@@ -1,0 +1,2 @@
+Next:
+	- Add a gas effet across the whole map when the extermination is triggered and see about doing a staggered gas and biter death process.
