@@ -1,37 +1,49 @@
 local Constants = require("constants")
 
-local techUnits = tonumber(settings.startup["biter_extermination-tech_cost_multiplyer"].value)
+local techUnits, techUnitsEnabled  = tonumber(settings.startup["biter_extermination-tech_cost_multiplyer"].value), true
+--Do this so the technology is available for other mods to utilise the icon, wording, etc, but it isn't shown in the tech tree.
+if techUnits == 0 then
+	techUnitsEnabled = false
+	techUnits = 1
+end
 local recipeUnits = tonumber(settings.startup["biter_extermination-recipe_cost_multiplyer"].value)
+
+
+data:extend(
+	{
+		{
+			type = "technology",
+			name = "biter_extermination-exterminate_biters",
+			icon_size = 128,
+			icon = Constants.AssetModName .. "/graphics/technology/exterminate_biters.png",
+			effects = {
+				{
+					type = "unlock-recipe",
+					recipe = "biter_extermination-exterminate_biters"
+				}
+			},
+			prerequisites = {"artillery", "space-science-pack", "atomic-bomb"},
+			unit = {
+				count = techUnits or 1,
+				ingredients = {
+					{"automation-science-pack", 1},
+					{"logistic-science-pack", 1},
+					{"military-science-pack", 4},
+					{"chemical-science-pack", 2},
+					{"production-science-pack", 1},
+					{"utility-science-pack", 1},
+					{"space-science-pack", 2}
+				},
+				time = 60
+			},
+			order = "zzz",
+			enabled = techUnitsEnabled
+		}
+	}
+)
 
 data:extend(
     {
-        {
-            type = "technology",
-            name = "biter_extermination-exterminate_biters",
-            icon_size = 128,
-            icon = Constants.AssetModName .. "/graphics/technology/exterminate_biters.png",
-            effects = {
-                {
-                    type = "unlock-recipe",
-                    recipe = "biter_extermination-exterminate_biters"
-                }
-            },
-            prerequisites = {"artillery", "space-science-pack", "atomic-bomb"},
-            unit = {
-                count = techUnits,
-                ingredients = {
-                    {"automation-science-pack", 1},
-                    {"logistic-science-pack", 1},
-                    {"military-science-pack", 4},
-                    {"chemical-science-pack", 2},
-                    {"production-science-pack", 1},
-                    {"utility-science-pack", 1},
-                    {"space-science-pack", 2}
-                },
-                time = 60
-            },
-            order = "zzz"
-        },
         {
             type = "item",
             name = "biter_extermination-exterminate_biters",
