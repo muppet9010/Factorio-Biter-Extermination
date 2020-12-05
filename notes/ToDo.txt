@@ -1,2 +1,6 @@
-Next:
+TODO:
+
+
+Future:
 	- Add a gas effet across the whole map when the extermination is triggered and see about doing a staggered gas and biter death process.
+	- look at the new poison capsule graphic and modify to be a better canister.
